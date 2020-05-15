@@ -11,4 +11,12 @@
 
 </body>
 
+<!-- Loads script after body has loaded. If this were in the head,
+     it would not have shown on the page as it would not have read the
+     body and would not know what "innerHTML" means. -->
+<script>
+    var date = new Date();
+    document.body.innerHTML = "<h1>Today's date is " + date + "</h1>";
+</script>
+
 </html>

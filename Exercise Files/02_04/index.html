@@ -5,15 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>An empty page</title>
+    <!-- 
+        "deter" ensures script is loaded while but executed after html has
+        loaded:
+        <script src="script.js" defer></script>
+
+        "async" ensures script is loaded while html is loading, only render
+        blocking execution
+        <script src="script.js" async></script>
+    -->
 </head>
 
 <body>
 
 </body>
 
-<script>
-    var date = new Date();
-    document.body.innerHTML = "<h1>Today is: " + date + "</h1>";
-</script>
+<!-- Referencing the same code in a separate file (best practice) -->
+<script src="script.js"></script>
 
 </html>
