@@ -24,7 +24,7 @@ console.log("Before: ", pens);
 // pens.push("pink", "prussian blue");
 
 // Find the specified position (pos) and remove n number of items from the array. Arguments: pens.splice(pos,n):
-// pens.splice(pos, n) // Starts at the seccond item and removes two items.
+// pens.splice(2, 2) // Starts at the seccond item and removes two items.
 
 // console.log("After: ", pens);
 
@@ -32,12 +32,12 @@ console.log("Before: ", pens);
 // var newPens = pens.slice();
 // console.log("New pens: ", newPens);
 
-// Return the first element that matches the search parameter after the specified index position. Defaults to index position 0. Arguments: pens.indexOf(search, index):
-// var result = pens.indexOf(search, index);
+// Return the index of the first element that matches the search parameter after the specified index position. Defaults to index position 0. Arguments: pens.indexOf(search, index):
+// var result = pens.indexOf("orange", 1);
 // console.log("The search result index is: ", result);
 
 // Return the items in an array as a comma separated string. The separator argument can be used to change the comma to something else. Arguments: pens.join(separator):
-// var arrayString = pens.join(separator);
+// var arrayString = pens.join(",");
 // console.log("String from array: ", arrayString);
 
 // MDN documentation for Array:

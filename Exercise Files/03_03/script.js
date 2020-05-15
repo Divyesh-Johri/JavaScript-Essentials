@@ -6,3 +6,5 @@ var justAnotherVariable;
 
 // Try this in your console:
 // console.log(typeof insertVariableName);
+
+// variable++ and variable-- (unary operators) exists!!!! WOOOOOOO!!
