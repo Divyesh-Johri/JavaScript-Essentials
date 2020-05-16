@@ -3,9 +3,17 @@ function doSomeMath() {
 	var b = 4;
 	var sum = a + b;
 
-	return sum;
+	// "Closure": When an inner function relies on variables from its
+	// outer function, it will still close its memory of the outer function
+	// except for the required variables.
+	function multiply(){
+		var result = a*b;
+		return result;
+	}
+
+	return multiply;
 }
 
 var theResult = doSomeMath();
 
-console.log("The result: ", theResult);
+console.log("The result: ", theResult());
