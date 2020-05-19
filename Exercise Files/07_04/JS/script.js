@@ -10,4 +10,6 @@ function reveal(e) {
     ALERT.classList.toggle("hide");
 }
 
-CTA.onclick = reveal;
+// Event listener approach: so multiple functions can occur per event
+CTA.addEventListener("click", reveal, false)
+CTA.addEventListener("click", function(){console.log("woah")}, false)
