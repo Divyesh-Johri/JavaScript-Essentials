@@ -57,6 +57,14 @@ function start() {
 
 // Reset everything:
 function reset() {
+    clearInterval(interval)
+    interval = null //remove current interval process
+    timerRunning = false
+    timer = [0,0,0,0]
+
+    testArea.value = ""
+    theTimer.innerHTML = "00:00:00"
+    testWrapper.style.borderColor = "grey"
     console.log("reset button has been pressed!");
 }
 
