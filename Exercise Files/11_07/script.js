@@ -1,3 +1,13 @@
+/*	In order to reduce space of javascript files, you can minimize them
+
+	javascript-minifier.org is a good one 
+
+*/
+
+
+
+
+
 const testWrapper = document.querySelector(".test-wrapper");
 const testArea = document.querySelector("#test-area");
 const originText = document.querySelector("#origin-text p").innerHTML;

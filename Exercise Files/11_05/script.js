@@ -1,3 +1,11 @@
+/*  You can lint files using websites like
+    jslint.com
+    jshint.com    
+*/
+
+
+
+
 const testWrapper = document.querySelector(".test-wrapper");
 const testArea = document.querySelector("#test-area")
 const originText = document.querySelector("#origin-text p").innerHTML;

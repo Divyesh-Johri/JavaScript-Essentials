@@ -1,3 +1,9 @@
+// To use ESlint:
+// 
+// cmd into local directory
+// $npm init
+// $eslint --init
+
 const testWrapper = document.querySelector(".test-wrapper");
 const testArea = document.querySelector("#test-area")
 const originText = document.querySelector("#origin-text p").innerHTML;

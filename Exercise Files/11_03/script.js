@@ -31,7 +31,6 @@ function runTimer() {
 // Match the text entered with the provided text on the page:
 function spellCheck() {
     let textEntered = testArea.value;
-    console.log("Text entered: ", textEntered);
     let originTextMatch = originText.substring(0,textEntered.length);
 
     if (textEntered == originText) {
@@ -53,6 +52,8 @@ function start() {
     if (textEnterdLength === 0) {
 
         interval = setInterval(runTimer, 10);
+        console.info(interval)  // different interval instance is created which
+                                // causes the error
     }
 }
 
